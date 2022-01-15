@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&family=Yeseva+One&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background: #ddd;
+  padding: 0;
+}
+i {
+  cursor: pointer;
+}
+h2 {
+  color: #e02c6d;
+}
+/* header section styles */
+header {
+  width: 100vw;
+  background: #e02c6d;
+  color: rgb(255, 255, 255);
+}
+nav {
+  padding: 0 4em;
+  display: flex;
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+  margin: 0 10px;
+}
+nav ul li a,
+.logo a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.mobile-menu {
+  display: none;
+}
+
+#shopping_cart,
+.mobile-menu i {
+  font-size: 30px;
+}
+#shopping_cart {
+  display: none;
+}
+/* header styles end */
+
+/* home page styles */
+#home {
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  height: 520px;
+  justify-content: space-between;
+  align-items: center;
+}
+#home .home-text {
+  width: 420px;
+}
+#home .home-text button {
+  margin-top: 5px;
+  background: #e02c6d;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+#home .home-img img {
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+}
+#home .home-img img:hover {
+  transform: scale(1.1);
+}
+/* home page style end */
+
+/* brand logo styles */
+.brand-logo {
+  width: 90vw;
+  height: 200px;
+  padding-bottom: 10px;
+}
+.brand-logo .logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.brand-logo .logos img {
+  margin: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.brand-logo .logos img:hover {
+  transform: scale(1.2);
+}
+/* brand logos styles end*/
+
+/* collection page styles  */
+#collection {
+  width: 75vw;
+  margin: 0 auto;
+}
+.seeMore {
+  color: #e02c6d;
+  margin: 10px 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.all-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+  grid-gap: 10px;
+}
+.card {
+  padding: 8px;
+  border: 1px solid #ddd;
+  width: 300px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 9px 7px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.card .card-rating {
+  color: orange;
+}
+/* collection styles end */
+
+/* customers revew styles */
+.review {
+  width: 90vw;
+  padding: 50px 0;
+  margin: 0 auto;
+}
+.review img {
+  width: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+}
+.review-text {
+  width: 60vw;
+  margin: 0 auto;
+  text-align: center;
+}
+.review-slide {
+  display: flex;
+  justify-content: center;
+}
+.review-slide div {
+  width: 12px;
+  cursor: pointer;
+  height: 12px;
+  margin-left: 5px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+/* review styles end */
+/*footer section styles*/
+footer {
+  background-color: black;
+  color: white;
+  padding: 2em 0;
+}
+.footer-info {
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* responsive design  */
+/* mobile responsive */
+@media (max-width: 688px) {
+  .mobile-menu {
+    display: block;
+    display: flex;
+    align-items: center;
+  }
+  menu {
+    display: none;
+  }
+  nav .logo h2 {
+    font-size: 20px;
+  }
+  #shopping_cart {
+    display: flex;
+    align-items: center;
+  }
+  #home {
+    margin-top: 10em;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  #home .home-text {
+    width: 90vw;
+  }
+  .home-btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  .review-text {
+    width: 90vw;
+  }
+}
+@media (min-width: 688px) and (max-width: 992px) {
+  .all-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .mobile-menu {
+    display: block;
+    display: flex;
+    align-items: center;
+  }
+  menu {
+    display: none;
+  }
+  nav .logo h2 {
+    font-size: 25px;
+  }
+  #shopping_cart {
+    display: flex;
+    align-items: center;
+  }
+}
